@@ -43,3 +43,28 @@ Es necesario tener en consideración los siguientes aspectos del sistema para un
     \item Dinámica del sistema: Como se desarrolla y transforma el sistema cuando este cambia en el tiempo.
     \item Recursos del sistema: Que partes del sistema son compartidos
 \end{enumerate}
+
+\subsection{Simulación discreta}
+Los métodos de simulación discreta se refieren al modelamiento de sistemas con eventos discretos donde las variables de estado cambian de valor en instantes no periódicos de tiempo.
+
+Un evento discreto ocurre sólo una vez en el tiempo por ende se vuelve único en el sistema, este continúa interrumpidamente con respecto al tiempo, permite que las variables cambien continuamente sobre el tiempo, esto viene dado por la naturaleza de los datos discretos que se pueden definir como "separado " y "distinto", cabe destacar que las variables aleatorias discretas sólo pueden tomar valores enteros.
+
+En un sistema de colas simple, compuesto por una población considerada infinita para el ejemplo con unidades que requieren el servicio determinado por un $\lambda$ por unidad de tiempo definido por una distribución de Poisson es imposible similar su comportamiento de manera continua puesto que cada vez que llega una unidad a la fila la simulación se ve afectada, este evoluciona con el tiempo y requiere una comprensión de su evolución, También requiere definir que es el estado del sistema y como cambia con el tiempo 
+
+\begin{enumerate}
+    \item Estado del sistema (en este caso): N° de unidades que hay en el sistema en un determinado momento. (en la cola y recibiendo servicio)
+    \item Como cambia con el tiempo (en este caso): Evidentemente es cuando llega una nueva unidad a la cola o cuando una unidad ha recibido servicio y abandona el sistema. A cada uno de estos le podemos llamar “sucesos”
+\end{enumerate}
+
+Si las llegadas están determinadas aleatoriamente por una distribución Poisson entonces basta con simular extrayendo números aleatorios que sigan la distribución. Cada simulación de sistemas discretos tiene su propio estudio, debido al modelo que lo describe y las respuestas que responde.
+
+Modelización y simulación son términos que se utilizan para la construcción de modelos de sistemas, la representación de la dinámica de los sistemas moviéndose de un estado a otro de acuerdo a reglas de operación definidas.
+
+\subsection{Simulación Continua} 
+Se puede llamar sistema contínuo a todo aquel sistema donde sus variables evolucionan continuamente en el tiempo, estos se desarrollan mediante ecuaciones diferenciales, ordinarias o de orden superior.
+
+Un modelo de simulación continua utiliza ecuaciones diferenciales que evidencian la variación de cada variable del modelo de simulación del sistema, son modelos que se utilizan para para procesos de gran volumen. En este sentido las variables se ven afectadas de forma continua y diferenciable en el tiempo. Se realiza una examinación y análisis hasta que hay un umbral en el que se desencadenan muchos sucesos, las ecuaciones diferenciales pueden estudiar procesos contínuos y estocásticos, por lo que se vuelven útiles al minuto de realizar una simulación continua.
+
+Para efectivamente realizar una simulación en el caso de los sistemas continuos es necesario obtener datos sobre las trayectorias que describen las variables de los modelos continuos (en general ecuaciones diferenciales), es a través de las soluciones a estas las que nos otorgarán los resultados necesarios para la correcta resolución de problemas y objetivos planteados.
+
+Para el caso de la simulación de la Pandemia COVID-19, este tipo de simulación es la más relevante para su estudio, pues lo más común es que se necesite el análisis de cómo evoluciona esta epidemia en un trazo de tiempo.
